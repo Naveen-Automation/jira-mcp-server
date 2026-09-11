@@ -1,6 +1,6 @@
 {
   "name": "@automate-io/jira-mcp-server",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "MCP server for Jira Cloud. Exposes issue, project, board, sprint, search, comment, worklog, link, version, attachment and property operations as MCP tools using the Jira Cloud REST and Agile APIs.",
   "main": "dist/server.js",
   "type": "module",
