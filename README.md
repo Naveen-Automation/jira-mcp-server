@@ -4,6 +4,8 @@ A Model Context Protocol (MCP) server for **Jira Cloud**. It exposes issue, proj
 sprint, search, comment, worklog, link, version, attachment and property operations as MCP
 tools, backed directly by the Jira Cloud REST API (v3) and Agile API (1.0).
 
+This project is not affiliated with, endorsed by, or sponsored by Atlassian.
+
 ## Table of Contents
 
 - [Overview](#overview)
