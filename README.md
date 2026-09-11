@@ -39,7 +39,7 @@ tools, backed directly by the Jira Cloud REST API (v3) and Agile API (1.0).
    ```
 2. Or, once published, install as a dependency of your own project:
    ```bash
-   npm i @automate-io/jira-mcp@latest
+  npm i @automate-io/jira-mcp-server@latest
    ```
 
 ## Configuration
@@ -64,7 +64,7 @@ isn't hardcoded):
     "jira-mcp": {
       "type": "stdio",
       "command": "node",
-      "args": ["node_modules/@automate-io/jira-mcp/dist/server.js"],
+      "args": ["node_modules/@automate-io/jira-mcp-server/dist/server.js"],
       "cwd": "${workspaceFolder}",
       "env": {
         "JIRA_URL": "${input:jiraBaseUrl}",
