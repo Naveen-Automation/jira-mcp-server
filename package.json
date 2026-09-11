@@ -1,0 +1,48 @@
+{
+  "name": "@automate-io/jira-mcp",
+  "version": "0.0.1",
+  "description": "MCP server for Jira Cloud. Exposes issue, project, board, sprint, search, comment, worklog, link, version, attachment and property operations as MCP tools using the Jira Cloud REST and Agile APIs.",
+  "main": "dist/server.js",
+  "type": "module",
+  "bin": {
+    "jira-mcp": "dist/server.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/**/*",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev": "tsx src/server.ts",
+    "inspect": "cross-env DANGEROUSLY_OMIT_AUTH=true node_modules\\.bin\\mcp-inspector node_modules\\.bin\\tsx src/server.ts"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "ai",
+    "jira",
+    "atlassian",
+    "jira-cloud",
+    "model-context-protocol"
+  ],
+  "author": "Veeranki Naveen Goud",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.17.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.16.8",
+    "@types/node": "24.1.0",
+    "cross-env": "10.0.0",
+    "tsx": "4.20.3",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
